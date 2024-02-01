@@ -14,6 +14,8 @@ pnpm dlx @biomejs/biome init
 
 Config file: `biome.config.js`
 
+Adjust the version number to the latest version of the schema.
+
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",

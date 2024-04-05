@@ -18,7 +18,7 @@ Adjust the version number to the latest version of the schema.
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
   "organizeImports": {
     "enabled": true
   },

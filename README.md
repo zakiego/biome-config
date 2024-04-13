@@ -12,7 +12,7 @@ pnpm add --save-dev --save-exact @biomejs/biome
 pnpm dlx @biomejs/biome init
 ```
 
-Config file: `biome.config.js`
+Config file: `biome.config.json`
 
 Adjust the version number to the latest version of the schema.
 

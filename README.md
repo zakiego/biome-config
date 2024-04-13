@@ -1,14 +1,27 @@
 # Biome Config ✌🏻
 
+## Recap
+
+```bash copy
+pnpm add --save-dev --save-exact @biomejs/biome \
+&& pnpm dlx @biomejs/biome init \
+&& echo '{ "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json", \
+  "organizeImports": { "enabled": true }, \
+  "linter": { "enabled": true, "rules": { "recommended": true } }, \
+  "formatter": { "enabled": true, "indentWidth": 2, "indentStyle": "space" } \
+}' > biome.json \
+&& pnpm biome format --write biome.json
+```
+
 ## Install
 
-```bash
+```bash copy
 pnpm add --save-dev --save-exact @biomejs/biome
 ```
 
 ## Init
 
-```bash
+```bash copy
 pnpm dlx @biomejs/biome init
 ```
 
@@ -16,7 +29,7 @@ Config file: `biome.json`
 
 Adjust the version number to the latest version of the schema.
 
-```json
+```json copy
 {
   "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
   "organizeImports": {

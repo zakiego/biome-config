@@ -5,12 +5,10 @@
 ```bash copy
 pnpm add --save-dev --save-exact @biomejs/biome \
 && pnpm dlx @biomejs/biome init \
-&& echo '{ "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json", \
-  "organizeImports": { "enabled": true }, \
-  "linter": { "enabled": true, "rules": { "recommended": true } }, \
-  "formatter": { "enabled": true, "indentWidth": 2, "indentStyle": "space" } \
-}' > biome.json \
-&& pnpm biome format --write biome.json
+&& echo '{ "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json", "organizeImports": { "enabled": true }, "linter": { "enabled": true, "rules": { "recommended": true } }, "formatter": { "enabled": true, "indentWidth": 2, "indentStyle": "space" } }' > biome.json \
+&& pnpm biome format --write biome.json \
+&& mkdir -p .vscode \
+&& echo '{ "recommendations": ["biomejs.biome"] }' > .vscode/extensions.json
 ```
 
 ## Install
